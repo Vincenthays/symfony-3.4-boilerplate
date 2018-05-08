@@ -1,0 +1,14 @@
+{% extends '@Main/layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="card">
+        {% block fos_user_content %}
+        {% endblock fos_user_content %}
+    </div>
+
+{% endblock %}
